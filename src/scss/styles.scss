@@ -1,0 +1,30 @@
+// 
+// Styles
+// 
+
+@import "./variables";
+
+// Import Bootstrap
+@import "bootstrap/scss/bootstrap.scss";
+
+// Global CSS
+@import "./global";
+
+// Components
+@import "./components/icons";
+
+// Sections
+@import "./sections/masthead";
+@import "./sections/showcase";
+@import "./sections/testimonials";
+@import "./sections/call-to-action";
+@import "./sections/footer";
+
+.showcase-img {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  display: inline-block;
+  width: 50%;
+  height: 75px;
+}
