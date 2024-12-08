@@ -24,7 +24,30 @@
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-  display: inline-block;
-  width: 50%;
+  display: flex;
+  width: 100%;
   height: 75px;
+  object-fit: cover;
+}
+.carousel-inner {
+  object-fit: cover;
+  max-height: 450px;
+  .carousel-item {
+    height: 100%;
+  &.active {
+    max-height: 450px;
+  }
+  img {
+    height: auto;
+    max-height: 450px;
+    }
+  }
+}
+
+
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5); 
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
 }

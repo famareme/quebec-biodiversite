@@ -10840,6 +10840,8 @@ textarea.form-control-lg {
 
 header.masthead {
   position: relative;
+  width: 100%;
+  background-color: #343a40;
 }
 header.masthead:before {
   content: "";
@@ -10913,7 +10915,32 @@ footer.footer {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-  display: inline-block;
-  width: 50%;
+  display: flex;
+  width: 100%;
   height: 75px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.carousel-inner {
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-height: 450px;
+}
+.carousel-inner .carousel-item {
+  height: 100%;
+}
+.carousel-inner .carousel-item.active {
+  max-height: 450px;
+}
+.carousel-inner .carousel-item img {
+  height: auto;
+  max-height: 450px;
+}
+
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
 }
