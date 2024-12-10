@@ -1,0 +1,321 @@
+doctype html
+html(lang='en')
+	head
+		meta(charset='utf-8')
+		meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+		meta(name='description', content='')
+		meta(name='author', content='')
+
+		title QuebecBiodiversite - Sociéte de valorisation
+
+		// Favicon
+		link(rel='icon', type='image/x-icon', href='./assets/favicon.ico')
+
+		// Bootstrap icons
+		link(href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css', rel='stylesheet', type='text/css')
+
+		// Google fonts
+		link(href='https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic', rel='stylesheet', type='text/css')
+
+		// Core theme CSS (includes Bootstrap)
+		link(href='css/styles.css', rel='stylesheet')
+		link(href='https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css', rel='stylesheet')
+
+	body
+		nav.navbar.navbar-light.bg-light.static-top
+			.container-fluid
+				.container
+						.row.justify-content-center.align-items-center.mb-3
+								.col-md-4
+										a.navbar-brand(href='#!').showcase-img(style="background-image: url('assets/img/logoQB1.jpg'); ")
+								.col-md-8
+										ul.nav.justify-content-end
+												li.nav-item
+												a.nav-link.active(href='/') ACCUEIL
+												li.nav-item
+												a.nav-link(href='/profil.html') PROFIL
+												li.nav-item
+												a.nav-link(href='/services.html') SERVICES
+												li.nav-item
+												a.nav-link(href='/realisations.html') RÉALISATIONS
+												li.nav-item
+												a.nav-link(href='#') CONTACT
+
+
+
+
+				// Masthead
+				header.masthead
+					#carouselExampleSlidesOnly.carousel.slide(data-bs-ride="carousel")
+						ol.carousel-indicators
+							li(data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active")
+							li(data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1")
+							li(data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2")
+							li(data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3")
+							li(data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4")
+						.carousel-inner
+							.carousel-item.active
+								//- img.d-block.w-100(src="assets/img/business1.jpg" alt="First slide")
+								figure.half
+									img(src="/assets/img/business1.jpg")
+									img(src="/assets/img/business2.jpg")
+									img(src="/assets/img/business3.jpg")
+								
+								.carousel-caption
+									h1.display-1 Business Consulting
+							.carousel-item
+								//- img.d-block.w-100(src="assets/img/animal1.jpg" alt="Second slide")
+								figure.half(style="display:flex")
+									img(src="/assets/img/animal1.jpg")
+									img(src="/assets/img/animal2.jpg")
+									img(src="/assets/img/animal3.jpg")
+								.carousel-caption
+									h1.display-1 Recherche Animale
+							.carousel-item
+								//- img.d-block.w-100(src="assets/img/marine1.jpg" alt="Third slide")
+								figure.half(style="display:flex")
+									img(src="/assets/img/marine1.jpg" alt="Third slide")
+									img(src="/assets/img/marine5.jpg" alt="Third slide")
+									img(src="/assets/img/marine3.jpg" alt="Third slide")
+								.carousel-caption
+									h1.display-1 Recherche Marine
+							.carousel-item
+								//- img.d-block.w-100(src="assets/img/agriculture2.jpg" alt="Four slide")
+								figure.half(style="display:flex")
+									img(src="/assets/img/agriculture2.jpg" alt="Four slide")
+									img(src="/assets/img/agriculture3.jpg" alt="Four slide")
+									img(src="/assets/img/agriculture4.jpg" alt="Four slide")
+								.carousel-caption
+									h1.display-1 Recherche Agricole
+							.carousel-item
+								//- img.d-block.w-100(src="assets/img/laboratoire2.jpg" alt="Fifth slide")
+								figure.half(style="display:flex")
+									img(src="/assets/img/laboratoire2.jpg" alt="Fifth slide")
+									img(src="/assets/img/laboratoire3.jpg" alt="Fifth slide")
+									img(src="/assets/img/laboratoire4.jpg" alt="Fifth slide")
+								.carousel-caption
+									h1.display-1 Analyse Laboratoire
+
+
+					.container.position-relative
+						.row.justify-content-center
+							.col-xl-10
+								.text-center.text-white
+										// Page heading
+										h1.my-4 Québec Biodiversité Enr. possède une forte expertise dans le domaine des extraits actifs naturels indispensables à la nutrition humaine et à l’alimentation animale!
+
+										// Signup form
+
+										// * * * * * * * * * * * * * * *
+										// * * SB Forms Contact Form * *
+										// * * * * * * * * * * * * * * *
+
+										// This form is pre-integrated with SB Forms.
+										// To make this form functional, sign up at
+										// https://startbootstrap.com/solution/contact-forms
+										// to get an API token!
+
+										//- form.form-subscribe#contactForm(data-sb-form-api-token='API_TOKEN')
+
+													// Email address input
+													.row
+															.col
+																	input#emailAddress.form-control.form-control-lg(type='email' placeholder='Email Address' data-sb-validations='required,email')
+																	.invalid-feedback.text-white(data-sb-feedback='emailAddress:required')
+																			| Email Address is required.
+																	.invalid-feedback.text-white(data-sb-feedback='emailAddress:email')
+																			| Email Address Email is not valid.
+
+															.col-auto
+																	button#submitButton.btn.btn-primary.btn-lg.disabled(type='submit') Submit
+
+													// Submit success message
+													//
+													// This is what your users will see when the form
+													// has successfully submitted
+
+													#submitSuccessMessage.d-none
+															.text-center.mb-3
+																	.fw-bolder Form submission successful!
+																	p To activate this form, sign up at
+																	a.text-white(href='https://startbootstrap.com/solution/contact-forms') https://startbootstrap.com/solution/contact-forms
+
+													// Submit error message
+													//
+													// This is what your users will see when there is
+													// an error submitting the form
+
+													#submitErrorMessage.d-none
+															.text-center.text-danger.mb-3 Error sending message!
+
+				// Icons Grid
+				.container
+					section.features-icons.bg-light.text-center
+							.container
+									.row
+											.col-lg-4
+													.features-icons-item.mx-auto.mb-5.mb-lg-0.mb-lg-3
+															.features-icons-icon.d-flex
+																	i.bi-window.m-auto.text-primary
+															h3 Vision
+															p.lead.mb-0 Elle est double et permet à Québec Biodiversité Enr. :
+															ul.list-unstyled
+																li de faire le lien entre l’industrie et les structures de recherche;
+																li Augmentation des fonds des institutions de recherche universitaires au niveau provincial et fédéral.
+											.col-lg-4
+													.features-icons-item.mx-auto.mb-5.mb-lg-0.mb-lg-3
+															.features-icons-icon.d-flex
+																	img.d-flex.mx-auto(src="assets/img/solutions.jpg" alt="solutions")
+															h3 Solutions
+															p.lead.mb-0 Accompagnement des PMEs dans le positionnement stratégique de leurs produits et des Institutions de recherche dans la préparation de leur demande de subvention
+											.col-lg-4
+													.features-icons-item.mx-auto.mb-0.mb-lg-3
+															.features-icons-icon.d-flex
+																	i.bi-terminal.m-auto.text-primary
+															h3 Contact
+															p.lead.mb-0 Contactez-nous pour une soumission , nous pouvons vous aidez dans vos démarches et dans vous projets
+
+					// Image Showcases
+					section.showcase
+							.container-fluid.p-0
+								.row.g-0
+									.col-lg-6.order-lg-2.text-white.showcase-img(style="background-image: url('assets/img/laboratoire.jpg');")
+									.col-lg-6.order-lg-1.my-auto.showcase-text
+										h2 Accompagnement des Institutions de recherche dans la préparation de leur demande de subvention: Analyse stratégique et financière
+										.lead.mb-0
+											ul
+												li Produit existant : Amélioration et Positionnement
+												li Produit en devenir : Conception, Développement technique, Homologation
+								.row.g-0
+									.col-lg-6.text-white.showcase-img(style="background-image: url('assets/img/marine2.jpg');")
+									.col-lg-6.my-auto.showcase-text
+										h2 Accompagnement des PMEs dans le positionnement stratégique de leurs produits :
+										.lead.mb-0
+											ul
+												li Produit existant : Amélioration et Positionnement
+												li Produit en devenir : Conception, Développement technique, Homologation
+								.row.g-0
+									.col-lg-6.order-lg-2.text-white.showcase-img(style="background-image: url('assets/img/agriculture1.jpg');")
+									.col-lg-6.order-lg-1.my-auto.showcase-text
+										h2 Préparation de la documentation technique pour la demande d’homologation de produits auprès de Santé Canada
+										.lead.mb-0
+											| Rédaction du document technique pour la réclamation des crédits de recherche scientifique et de développement expérimental
+
+
+					// Testimonials
+					section.testimonials.text-center.bg-light
+							.container
+									h2.mb-5 Meet our team...
+									.row
+											.col-lg-4
+													.testimonial-item.mx-auto.mb-5.mb-lg-0
+															img.img-fluid.rounded-circle.mb-3(src='assets/img/cherif.jpg', alt='...')
+															h5 Chérif Aidara.
+															p.font-weight-light.mb-0 "est le fondateur de la Société et un véritable chantre d’une agriculture africaine durable, régénérative et responsable essentiellement basée sur l’utilisation des ressources biologiques saines et fonctionnelles
+											.col-lg-4
+													.testimonial-item.mx-auto.mb-5.mb-lg-0
+															img.img-fluid.rounded-circle.mb-3(src='assets/img/fatou.jpg', alt='...')
+															h5 Fatou Seck.
+															p.font-weight-light.mb-0
+																	| élaboration et la mise en œuvre de sites et d’applications web innovantes pour optimiser les paramètres de production en agriculture et en élevage
+											.col-lg-4
+													.testimonial-item.mx-auto.mb-5.mb-lg-0
+															img.img-fluid.rounded-circle.mb-3(src='assets/img/guibril.jpg', alt='...')
+															h5 Guibril.
+															p.font-weight-light.mb-0 est le fondateur de la Société et un véritable chantre d’une agriculture africaine durable, régénérative et responsable essentiellement basée sur l’utilisation des ressources biologiques saines et fonctionnelles
+
+					// Call to Action
+					section#signup.call-to-action.text-white.text-center
+							.container.position-relative
+									.row.justify-content-center
+											.col-xl-6
+													h2.mb-4 Ready to get started? Sign up now!
+													// Signup form
+
+													// * * * * * * * * * * * * * * *
+													// * * SB Forms Contact Form * *
+													// * * * * * * * * * * * * * * *
+
+													// This form is pre-integrated with SB Forms.
+													// To make this form functional, sign up at
+													// https://startbootstrap.com/solution/contact-forms
+													// to get an API token!
+
+													form.form-subscribe#contactFormFooter(data-sb-form-api-token='API_TOKEN')
+
+															// Email address input
+															.row
+																	.col
+																			input#emailAddressBelow.form-control.form-control-lg(type='email' placeholder='Email Address' data-sb-validations='required,email')
+																			.invalid-feedback.text-white(data-sb-feedback='emailAddressBelow:required')
+																					| Email Address is required.
+																			.invalid-feedback.text-white(data-sb-feedback='emailAddressBelow:email')
+																					| Email Address Email is not valid.
+
+																	.col-auto
+																			button#submitButton.btn.btn-primary.btn-lg.disabled(type='submit') Submit
+
+															// Submit success message
+															//
+															// This is what your users will see when the form
+															// has successfully submitted
+
+															#submitSuccessMessage.d-none
+																	.text-center.mb-3
+																			.fw-bolder Form submission successful!
+																			p To activate this form, sign up at
+																			a.text-white(href='https://startbootstrap.com/solution/contact-forms') https://startbootstrap.com/solution/contact-forms
+
+															// Submit error message
+															//
+															// This is what your users will see when there is
+															// an error submitting the form
+
+															#submitErrorMessage.d-none
+																	.text-center.text-danger.mb-3 Error sending message!
+
+					// Footer
+					footer.footer.bg-light
+							.container
+									.row
+											.col-lg-6.h-100.text-center.text-lg-start.my-auto
+													ul.list-inline.mb-2
+															li.list-inline-item
+																	a(href='/') ACCUEIL
+															li.list-inline-item ⋅
+															li.list-inline-item
+																	a(href='/profil.html') PROFIL
+															li.list-inline-item ⋅
+															li.list-inline-item
+																	a(href='/services.html') SERVICES
+															li.list-inline-item ⋅
+															li.list-inline-item
+																	a(href='/realisations.html') RÉALISATIONS
+															li.list-inline-item ⋅
+															li.list-inline-item
+																	a(href='#!') CONTACT
+													p.text-muted.small.mb-4.mb-lg-0 &copy; QuebecBiodiversite 2024. All Rights Reserved.
+											.col-lg-6.h-100.text-center.text-lg-end.my-auto
+													ul.list-inline.mb-0
+															li.list-inline-item.me-4
+																	a(href='#!')
+																			i.bi-facebook.fs-3
+															li.list-inline-item.me-4
+																	a(href='#!')
+																			i.bi-twitter.fs-3
+															li.list-inline-item
+																	a(href='#!')
+																			i.bi-instagram.fs-3
+
+					// Bootstrap core JS
+					script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js')
+
+					// Core theme JS
+					script(src='js/scripts.js')
+
+					// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+					// * *                               SB Forms JS                               * *
+					// * * Activate your form at https://startbootstrap.com/solution/contact-forms * *
+					// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+
+					script(src='https://cdn.startbootstrap.com/sb-forms-latest.js')
