@@ -42,58 +42,41 @@ html(lang='en')
 												a.nav-link(href='/contact.html') CONTACT
 				// Masthead
 				header.masthead
-						img.banner-inner(src='assets/img/business.jpg', alt='service')
+						img.banner-inner(src='assets/img/contact.jpg', alt='service')
 						.container.position-relative
 								.row.justify-content-center
-										.col-xl-7
+										.col-xl-6
 												.text-center.text-white.my-4
 														// Page heading
-														h1 Services de consultation
-														h2.lead Prenez avantage de notre experise
+														h1 Contact
+														h2.lead Prenez contact avec nous !
 
 
 				// Icons Grid
 				.container
-					section.features-icons.bg-light.text-center
+					section.features-icons.bg-light
 							.container
-									.row
-											.col-lg-4
-													.card.h-100.border-start.border-4.border-success
-															.card-body
-																	.card-title
-																		h3 Accompagnement des PMEs dans le positionnement stratégique de leurs produits
-																		//- p.lead.mb-0 Elle est double et permet à Québec Biodiversité Enr. :
-																		ul
-																			li Produit existant : Amélioration et Positionnement
-																			li Produit en devenir : Conception, Développement technique, Homologation
-											.col-lg-4
-													.card.h-100.border-start.border-4.border-success
-															.card-body
-																	.card-title
-																		h3 Accompagnement des Institutions de recherche dans la préparation de leur demande de subvention: Analyse stratégique et financière
-																		//- p.lead.mb-0 Elle est double et permet à Québec Biodiversité Enr. :
-																		ul
-																			li Identification des facteurs clés de succès des demandes.
-											.col-lg-4
-													.card.h-100.border-start.border-4.border-success
-															.card-body
-																	.card-title
-																		h3 Préparation de la documentation technique pour la demande d’homologation de produits après de Santé Canada
-																		//- p.lead.mb-0 Elle est double et permet à Québec Biodiversité Enr. :
-																		ul.list-unstyled
-																			li Redaction du document technique pour la reclamation descredits de recherche scientifique et de developpement expérimental
-									
-									.row.mt-5.align-items-center
-										h2.text-start Ceux qui nous ont fait confiance !
-										.col-sm-4.d-flex.align-items-center
-											img.carousel-inner.w-50(src='assets/img/mcGill.png', alt='mcGill logo')
-											img.carousel-inner.w-50.h-50(src='assets/img/moriarty_logo.png', alt='moriarty logo')
-										.col-sm-2
-											img.carousel-inner.w-75(src='assets/img/AWOS_tech.jpg', alt='AWOS_tech logo')
-										.col-sm-2
-											img.carousel-inner.w-50(src='assets/img/leahy.jpg', alt='leahy logo')
-										.col-sm-2
-											img.carousel-inner.w-75(src='assets/img/aem-lab.png', alt='aem-lab logo')
+									section.get-in-touch
+										h1.title.text-center Entrer en contact
+										form.contact-form.row(action="https://formspree.io/f/mldeybed" method="POST")
+											.form-field.col-lg-6
+												label.label(for="name") Nom
+												input#name.input-text.js-input(type="text" required)
+											.form-field.col-lg-6
+												label.label(for="email") E-mail
+												input#email.input-text.js-input(type="email" required)
+											.form-field.col-lg-6
+												label.label(for="company") Nom Compagnie / Nom
+												input#company.input-text.js-input(type="text" required)
+											.form-field.col-lg-6
+												label.label(for="phone") Numéro contact
+												input#phone.input-text.js-input(type="text" required)
+											.form-field.col-lg-12
+												label.label(for="message") Message
+												textarea#message.w-100(cols="100" required)
+											.form-field.col-lg-12.text-center
+												input.submit-btn(type="submit" value="Submit")
+
 					// Footer
 					footer.footer.bg-light
 							.container

@@ -1,18 +1,16 @@
 {
     "title": "Landing Page",
-    "name": "startbootstrap-landing-page",
+    "name": "quebec-biodiversite",
     "version": "6.0.6",
     "scripts": {
-        "build": "pug views/ --out dist/ --pretty",
-        "build:assets": "node scripts/build-assets.js",
-        "build:views": "node scripts/build-pug.js",
-        "build:scripts": "node scripts/build-scripts.js",
-        "build:scss": "node scripts/build-scss.js",
-        "clean": "node scripts/clean.js",
+        "build": "npm run clean && pug views --out dist && cpx \"views/assets/**/*\" dist/assets && cpx \"views/js/**/*\" dist/js && cpx \"views/scss/**/*\" dist/css",
+        "clean": "rimraf dist",
         "start": "node server.js",
-        "start:debug": "npm run build && node scripts/start-debug.js"
+        "watch:scss": "sass --watch views/scss:dist/css --load-path=node_modules",
+        "build:scss": "sass views/scss:dist/css --load-path=node_modules",
+        "watch:dev": "concurrently \"npm run watch:scss\" \"nodemon server.js\""
     },
-    "description": "An HTML landing page template built with Bootstrap",
+    "description": "Biodiversite, propriété intellectuelle, recherche de financements, recherche agricoles",
     "keywords": [
         "css",
         "sass",
@@ -21,19 +19,18 @@
         "theme",
         "template"
     ],
-    "homepage": "https://startbootstrap.com/theme/landing-page",
+    "homepage": "http://quebecbiodiversite.com",
     "bugs": {
-        "url": "https://github.com/StartBootstrap/startbootstrap-landing-page/issues",
-        "email": "feedback@startbootstrap.com"
+        "email": "cherifaidara@quebecbiodiversite.com"
     },
     "license": "MIT",
     "author": "Start Bootstrap",
     "contributors": [
-        "David Miller (https://davidmiller.io/)"
+        "Fatou Seck"
     ],
     "repository": {
         "type": "git",
-        "url": "https://github.com/StartBootstrap/startbootstrap-landing-page.git"
+        "url": "https://github.com/famareme/quqbecbiodiversite"
     },
     "dependencies": {
         "bootstrap": "5.2.3",
@@ -43,11 +40,14 @@
         "autoprefixer": "10.4.14",
         "browser-sync": "^3.0.3",
         "chokidar": "3.5.3",
-        "concurrently": "6.3.0",
+        "chokidar-cli": "^3.0.0",
+        "concurrently": "^6.3.0",
+        "cpx": "^1.5.0",
         "postcss": "^8.4.49",
         "prettier": "2.8.6",
         "pug": "^3.0.3",
-        "sass": "1.60.0",
+        "rimraf": "^6.0.1",
+        "sass": "^1.82.0",
         "shelljs": "0.8.5",
         "upath": "2.0.1"
     }

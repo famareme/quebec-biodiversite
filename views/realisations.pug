@@ -18,7 +18,7 @@ html(lang='en')
 		link(href='https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic', rel='stylesheet', type='text/css')
 
 		// Core theme CSS (includes Bootstrap)
-		link(href='css/styles.css', rel='stylesheet')
+		link(href='css/styles.css?v=1.0', rel='stylesheet')
 		link(href='https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css', rel='stylesheet')
 
 	body
@@ -27,7 +27,7 @@ html(lang='en')
 				.container
 						.row.justify-content-center.align-items-center.mb-3
 								.col-md-4
-										a.navbar-brand(href='#!').showcase-img(style="background-image: url('assets/img/logoQB1.jpg'); ")
+										a.navbar-brand(href='/').showcase-img(style="background-image: url('assets/img/logoQB1.png'); ")
 								.col-md-8
 										ul.nav.justify-content-end
 												li.nav-item
@@ -39,49 +39,66 @@ html(lang='en')
 												li.nav-item
 												a.nav-link(href='/realisations.html') RÉALISATIONS
 												li.nav-item
-												a.nav-link(href='#') CONTACT
+												a.nav-link(href='/contact.html') CONTACT
 				// Masthead
 				header.masthead
-						img.carousel-inner(src='assets/img/realisations.jpg', alt='service')
+						img.banner-inner(src='assets/img/realisations.jpg', alt='service')
 						.container.position-relative
 								.row.justify-content-center
 										.col-xl-6
 												.text-center.text-white.my-4
 														// Page heading
 														h1 Réalisations
-														h2.lead Accompagnement & Soutien techniques
+														h2.lead Accompagnement & Soutien stratégiques
 
 
 				// Icons Grid
 				.container
 					section.my-5
-										h2 Survol des travaux réalises:
+										h2 Survol des travaux réalisés:
 										//- p.lead.mb-0 Elle est double et permet à Québec Biodiversité Enr. :
-										p Depuis 2001, la Compagnie Quebec Biodiversité accompagne les petites et moyennes entreprises québécoises dans le développement de leurs produits en leur apportant l’expertise et le soutien techniques. Ainsi, la Compagnie a completé plusieurs travaux techniques pour le compte de:
+										p Depuis 2001, la Compagnie Québec Biodiversité accompagne les petites et moyennes entreprises québécoises dans le développement de leurs produits en leur apportant l’expertise et le soutien techniques. Ainsi, la Compagnie a complété plusieurs travaux techniques pour le compte de:
 										h3.mt-3 Argileeaumer :
 										ul
-											li Etude technique sur l’argile de Manicouagan – Analyse de positionnement des produits basée sur l’analyse matricielle du Boston Consulting Group
-											li Rapport technique sur la caractérisation biochimique et microbiologique de trois produits destines a l’industrie cosmétique. Collaboration avec le CEPROCQ, l’Université McGill, l’Université Laval, le Programme PARI - CNRC
+											li Étude technique sur l’argile de Manicouagan – Analyse de positionnement des produits basée sur l’analyse matricielle du <i>Boston Consulting Group</i> (BCG)
+											li Rapport technique sur la caractérisation biochimique et microbiologique de trois produits destinés à l’industrie cosmétique. Collaboration avec le CEPROCQ, l’Université McGill, l’Université Laval, le Programme PARI - CNRC
 											li Support technique pour la demande d’homologation à la Direction des Produits de Santé Naturels.
 										h3 T-opt Logic:
 										p Elle est double et permet à Québec Biodiversité Enr. :
 										ul
-											li Préparation et Rédaction du plan d’affaires sur l’optimisation des procédéset méthodologies utilisant la Recherche Operationnelle.
+											li Préparation et Rédaction du plan d’affaires sur l’optimisation des procédés et méthodologies utilisant la Recherche Operationnelle.
 											li Préparation et Rédaction d’un plan de marketing – Analyse de positionnement sur l’analyse matricielle du <i>Boston Consulting Group</i>.
 										h3 J.C.Guilmain inc. :
 										ul
-											li Analyse des brevets sur l’utilisation de la zeolite naturelle dans l’alimentation animale
-											li Etudes techniques sur l’impact positif de la zeolite (clinoptilolite) sur la santé et la performance des animaux (porcins, bovins et volailles)
-											li Préparation et Rédaction de la demande d’homologation auprès de Santé Canada de la zéolite comme agent sequestrant d’odeur et réducteur d’humidité relative et comme source minérale
+											li Analyse des brevets sur l’utilisation de la zéolite naturelle dans l’alimentation animale.
+											li Études techniques sur l’impact positif de la zéolite (clinoptilolite) sur la santé et la performance des animaux (porcins, bovins et volailles).
+											li Préparation et Rédaction de la demande d’homologation auprès de Santé Canada de la zéolite comme agent séquestrant d’odeur et réducteur d’humidité relative et comme source minérale.
 										h3 Award Plastiques et Caoutchouc Ltée:
 										ul
-										li Préparation et Rédaction du rapport technique pour la réclamation des crédits de recherche scientifique et développement expérimental (RS&DE)
+											li Préparation et Rédaction du rapport technique pour la réclamation des crédits de recherche scientifique et développement expérimental (RS&DE).
+										h3.mt-3 AWOS Technologies :
+										ul
+											li Analyse de l’art antérieur. Elle se fait en exploitant à la fois les bases de données de brevet traditionnelles non payantes (USPTO, CIPO, Espacenet...) et celles payantes (Derwent - Web of Science et Scifinder). Cette étude va permettre d’affiner les revendications (claims) indépendantes à considérer dans le brevet provisoire. <br> Cette même étude va permettre d’anticiper un bon rapport international de recherche (International Search Report) quand la protection va atteindre le niveau PCT.
+											li Révision des spécifications. Elle constitue une suite logique de l’analyse de l'état de l’art. En effet, les spécifications décrivent plusieurs concepts à intégrer pour développer la deuxième version de AWOS. Ces spécifications devraient être établies de manière à éviter toute perception de contrefaçon sur des mécanismes déjà existants sur les véhicules routiers.
+											li Élaboration des revendications. A l’issue de l’analyse de l’art antérieur et d’une révision des spécifications pour ne retenir que celles qui ne font l’objet d’aucune perception de contrefaçon, l'élaboration des revendications indépendantes et dépendantes est effectuée.
+										h3.mt-3 Consortium RITA -McGill  :
+										ul
+											li Accompagnement de la Faculté d'Agriculture et des Sciences Environnementales de l'Université McGill et du Consortium RITA à la mise en place du réseau de co-création dans le domaine de la transformation des produits de la pêche et de l'aquaculture.
+											li Québec Biodiversité S.e.n.c. avait le mandat de: 1) <b>déterminer les priorités</b> qui doivent être abordées par ce réseau précompétitif spécifique à l’industrie des pêches et de l'aquaculture ; 2)<b> d’identifier les enjeux </b> et les préoccupations relatifs à l'innovation des produits, des procédés et des services ; et 3) <b>d’identifier les tendances, les technologies et les nouveaux marchés </b>des produits de la pêche et de l’aquaculture.
+										h3.mt-3  Leahy Orchards :
+										ul
+											li Préparation de la documentation pour le brevet sur l’extraction et l’effet des polyphénols sur la stéatose hépatique en relation avec l’inflammation et le stress oxydatif ;
+											li Analyse technique des travaux de recherche clinique et calendrier Gantt des travaux en lien avec le brevet;
+											li Préparation de la documentation pour le brevet sur l’effet combiné des polyphénols de pelure de pomme et ceux de canneberges  sur l’inflammation et le stress oxydatif ;
+											li Financement pour la Chair Industrielle de Recherche CRSNG - CHU Ste Justine;
+											li Crédits de Recherche RS&DE (Rapport technique présenté à l'Agence de Revenu du Canada sur les résultats permettant de surmonter les incertitudes technologiques).
+
 					// Footer
 					footer.footer.bg-light
 							.container
 									.row
 											.col-lg-6.h-100.text-center.text-lg-start.my-auto
-													ul.list-inline.mb-2
+													ul.nav-footer.list-inline.mb-2
 															li.list-inline-item
 																	a(href='/') ACCUEIL
 															li.list-inline-item ⋅
@@ -95,7 +112,7 @@ html(lang='en')
 																	a(href='/realisations.html') RÉALISATIONS
 															li.list-inline-item ⋅
 															li.list-inline-item
-																	a(href='#!') CONTACT
+																	a(href='/contact.html') CONTACT
 													p.text-muted.small.mb-4.mb-lg-0 &copy; QuebecBiodiversite 2024. All Rights Reserved.
 											.col-lg-6.h-100.text-center.text-lg-end.my-auto
 													ul.list-inline.mb-0
